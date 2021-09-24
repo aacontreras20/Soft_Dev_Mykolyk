@@ -1,3 +1,9 @@
+# Deven Maheshwari
+# SoftDev
+# K<nn> Write Name / Introduction to Python / Randomly chooses a student from pd. 1 and pd. 2 and prints their name
+# 2021-09-21
+#
+
 import random
 
 pd1 = ["Alejandro Alonso", "Yusuf Elsharawy", "Deven Maheshwari"]
