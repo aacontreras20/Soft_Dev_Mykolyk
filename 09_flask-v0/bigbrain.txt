@@ -32,6 +32,9 @@ object by writing .methodName(), with whatever parameters desired in the parenth
 under app, to run. Java also needed to compile code before running in the command line. This seems to be running it in the file, which is a 
 slight difference. 
 
+Discovery:
+When we ran it, we found that it didn't do anything remarkable. However, once navigating to the website it printed out, we found the message, "No halo queso!" written. Perhaps this hello_world function is being called somewhere and returning it's return output, leading to this result.
+
 Comments:
 Ducks are cool. Frameworks seem interesting; After we learn to use Flask, I want to explore the other web frameworks available like jinja. We're excited to start learning tools to be a SoftDev!
 Sources:
