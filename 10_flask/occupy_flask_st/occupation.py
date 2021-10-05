@@ -1,6 +1,6 @@
-# Umlauts - Deven Maheshwari, Alejandro Alonso, Yusuf Elsharawy Pd. 1
+# Umlauts - Yusuf Elsharawy & Bill, Alejandro Alonso & Señor Juan, Deven Maheshwari & Batman Pd. 1
 # SoftDev
-# K06 -- Prints a weighted-random job read from a CSV file containing names & percentages
+# K10 -- Prints a weighted-random job read from a CSV file containing names & percentages
 # 2021-09-28
 
 # POW-WOW SUMMARY
@@ -34,13 +34,13 @@ def init():
             job = row["Job Class"]
             percentage = float(row["Percentage"])
             jobPercentages[job] = percentage
-    
+
     totalPercentage = jobPercentages['Total']
     jobPercentages['Other'] = 100 - totalPercentage
     del jobPercentages['Total']
 
 # Returns an occupation with weighted probability
-def chooseRandom():     # 
+def chooseRandom():     #
     randVal = random.uniform(0, 100) # randomly chooses a number from 0 to total percentage
     for k, v in jobPercentages.items():
         randVal -= v

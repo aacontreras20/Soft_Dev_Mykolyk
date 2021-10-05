@@ -1,3 +1,8 @@
+# Umlauts - Yusuf Elsharawy & Bill, Alejandro Alonso & Señor Juan, Deven Maheshwari & Batman Pd. 1
+# SoftDev
+# K10 -- Putting Little Pieces Together/Flask/Creating a flask app to print a random occupation from the already created file occupation.py
+# 2021-09-28
+
 import occupation
 from flask import Flask
 app = Flask(__name__)
