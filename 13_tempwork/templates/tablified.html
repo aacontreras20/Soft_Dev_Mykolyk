@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 
+  Clyde 'Thluffy' Sinclair
+  SoftDev
+  Oct 2021
+ -->
+
+<html>
+
+  <head>
+    <title> {{ foo }} </title>
+  </head>
+
+  <body>
+    <h3>
+        SquidCatMan - Angela Zhang, Deven Maheshwari, Michelle Lo </br>
+        SoftDev </br>
+        K13 -- Template for Success/Flask/Writing flask app in groups using the occupation python file</br>
+        2021-10-13
+    </h3>
+    <h4> {{ random }} </h4>
+    {% for item in response %}
+    <td> {{ item }} </td> <td> {{ response[item] }} </td>
+    <br>
+    {% endfor %}
+  </body>
+
+</html>
+
