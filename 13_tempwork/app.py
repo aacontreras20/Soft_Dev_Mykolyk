@@ -17,6 +17,16 @@ def hello_world():
 
 @app.route("/occupyflaskst") 
 def test_tmplt():
+    """
+    Creates occupyflaskst route on flask app. Uses a dictonary to take in occupation jobs and percentages and sends them to tablified.html. 
+
+    Parameters:
+        None
+    
+    Returns:
+        None
+    """
+
     jobp = {}
     with open('data/occupations.csv') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -27,7 +37,16 @@ def test_tmplt():
         del jobp['Total']
     return render_template( 'tablified.html', foo = "K13", random = chooseRandom(jobp), response = jobp)
 
-def chooseRandom(jobdict):     #
+def chooseRandom(jobdict):  
+    """
+    Chooses random occupation based on weighted averages (from occupation.py)
+
+    Parameters:
+        None
+    Returns:
+        k - job name
+
+    """
     randVal = random.uniform(0, 100) # randomly chooses a number from 0 to total percentage
     for k, v in jobdict.items():
         randVal -= float(v)

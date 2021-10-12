@@ -1,0 +1,16 @@
+Squidcatman - Michelle Lo & Hellokitty, Angela Zhang & Inky, Deven Maheshwari & Batman
+SoftDev
+K13 - Template for Success/Using Flask/Creating flask app using the occupation python data 
+October 13 2021
+
+Notes:
+- Angela and Deven had similar python implementations of occupation because they imported the file into their new directories. 
+Michelle rereated the functions in the various assignments rather than import. 
+- We used Michelle's method so that our file tree would match the given one. 
+
+Discoveries:
+- Adding more @app.route("/") creates more websites built off of the home http://127.0.0.1:5000/.
+- We learned about this last assignment but the {% for ... %} can create python for loops within the HTML code. The {% end for %} is necessary. 
+
+Questions:
+- Implementing Reng's debugging method??
