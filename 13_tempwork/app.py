@@ -33,7 +33,8 @@ def test_tmplt():
         for row in reader:
             job = row["Job Class"]
             percentage = float(row["Percentage"])
-            jobp[job] = str(percentage)
+            link = row["Link"]
+            jobp[job] = [str(percentage), link]
         del jobp['Total']
     return render_template( 'tablified.html', foo = "K13", random = chooseRandom(jobp), response = jobp)
 
@@ -49,7 +50,7 @@ def chooseRandom(jobdict):
     """
     randVal = random.uniform(0, 100) # randomly chooses a number from 0 to total percentage
     for k, v in jobdict.items():
-        randVal -= float(v)
+        randVal -= float(v[0])
         if randVal <= 0:    # first cumulative percentage >= random value is the job chosen
             return k
 
