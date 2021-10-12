@@ -1,10 +1,9 @@
 # Squidcatman - Michelle Lo & Hellokitty, Angela Zhang & Inky, Deven Maheshwari & Batman
 # SoftDev
-# K13 - //
-# October 8 2021
+# K13 - Template for Success/Using Flask/Creating flask app using the occupation python data 
+# October 13 2021
 
 from flask import Flask, render_template 
-import occupation
 import csv
 import random
 
