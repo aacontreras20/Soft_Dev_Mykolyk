@@ -48,9 +48,6 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    # if (request.method == 'GET'):
-    #     value = request.form.get("username")
-    #     return render_template( 'response.html', name = value )
     print("***DIAG: request.args['username']  ***") # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Will work, just printing to termianl.  
     #print(request.args['username']) # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Depends on user input
     print("***DIAG: request.headers ***")
