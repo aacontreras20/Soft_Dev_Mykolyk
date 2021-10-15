@@ -52,7 +52,7 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
     #print(request.args['username']) # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Depends on user input
     print("***DIAG: request.headers ***")
     print(request.headers) # Headers is attribute of request
-    if (request.method == "POST"):
+    if (request.method == "GET"):
         return render_template( 'response.html', name = request.args['username'] )
     return render_template( 'response.html' )  #response to a form submission
 
