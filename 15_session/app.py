@@ -1,7 +1,7 @@
 # Sports! - Sean Ging and Deven Maheshwari
 # SoftDev
-# K14 - Form and Function/Intro to Flask/App to echo input from user. 
-# Oct 14 2021 
+# K15 - Sessions Greetings/Cookies & Error Handling/App to hadnle bad inputs and tracking username
+# Oct 18 2021 
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
