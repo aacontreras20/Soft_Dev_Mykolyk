@@ -5,7 +5,8 @@
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
+from flask import request
+from flask.globals import session           #facilitate form submission
 
 #the conventional way:
 #from flask import Flask, render_template, request
@@ -32,8 +33,8 @@ def disp_loginpage(): # Display. Prediction: Will work, login.html is in templat
     print(request) # From form submission
     print("***DIAG: request.args ***")
     print(request.args) # Inputs from user
-    request.args['username'] = 'Sports!'
-    request.args['password'] = 'Mykolyk'
+    session['username'] = 'Sports!'
+    session['password'] = 'Mykolyk'
     #print("***DIAG: request.args['username']  ***") # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Will work, just printing to termianl.  
     #print(request.args['username']) # Test by uncommenting line by line and seeing outputs in terminal and app. # Prediction: Depends on user input
     print("***DIAG: request.headers ***")
@@ -50,7 +51,7 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    print("***DIAG: request.args['username']  ***") # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Will work, just printing to termianl.  
+    #print("***DIAG: request.args['username']  ***") # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Will work, just printing to termianl.  
     #print(request.args['username']) # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Depends on user input
     print("***DIAG: request.headers ***")
     print(request.headers) # Headers is attribute of request

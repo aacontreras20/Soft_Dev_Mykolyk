@@ -9,4 +9,4 @@ Notable:
 Questions:
 
 Sources:
-- https://realpython.com/python-requests/
+- https://www.tutorialspoint.com/flask/flask_sessions.htm 
