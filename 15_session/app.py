@@ -32,6 +32,8 @@ def disp_loginpage(): # Display. Prediction: Will work, login.html is in templat
     print(request) # From form submission
     print("***DIAG: request.args ***")
     print(request.args) # Inputs from user
+    request.args['username'] = 'Sports!'
+    request.args['password'] = 'Mykolyk'
     #print("***DIAG: request.args['username']  ***") # Test by uncommenting line by line and seeing outputs in terminal and app. Prediction: Will work, just printing to termianl.  
     #print(request.args['username']) # Test by uncommenting line by line and seeing outputs in terminal and app. # Prediction: Depends on user input
     print("***DIAG: request.headers ***")
