@@ -5,8 +5,9 @@ Oct 18 2021
 
 Notable: 
 - As usernames are submitted on the app.py side, the Firefox web devlopment tool tracks what kind of request was generated. 
+- Samesite attribute??
 
 Questions:
-
+- Does it track lower vs upper case 
 Sources:
 - https://www.tutorialspoint.com/flask/flask_sessions.htm 
