@@ -12,17 +12,7 @@ from flask.globals import session           #facilitate form submission
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
-
-
-'''
-trioTASK:
-~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
-...read for understanding all of the code below.
-Some will work as written; other sections will not. Can you predict which?
-Devise some simple tests you can run to "take apart this engine," as it were.
-Execute your tests. Process results.
-PROTIP: Insert your own in-line comments wherever they will help your future self and/or current teammates understand what is going on.
-'''
+app.secret_key = "K15"
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage(): # Display. Prediction: Will work, login.html is in templates directory. 
