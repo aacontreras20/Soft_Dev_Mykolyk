@@ -54,6 +54,7 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
                 return render_template( 'response.html', name = request.args['username'], url = request.args['sub1'] )
         except:
             return render_template( 'error.html' )
+    return render_template( 'error.html' )
 
     
 if __name__ == "__main__": #false if this file imported as module
