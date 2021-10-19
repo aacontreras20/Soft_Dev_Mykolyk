@@ -3,13 +3,13 @@
 # K15 - Sessions Greetings/Cookies & Error Handling/App to hadnle bad inputs and tracking username
 # Oct 18 2021 
 
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request
-from flask.globals import session           #facilitate form submission
+#from flask import Flask             #facilitate flask webserving
+#from flask import render_template   #facilitate jinja templating
+#from flask import request
+#from flask.globals import session           #facilitate form submission
 
 #the conventional way:
-#from flask import Flask, render_template, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
 app.secret_key = "K15"
@@ -49,8 +49,11 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
     print("***DIAG: request.headers ***")
     print(request.headers) # Headers is attribute of request
     if (request.method == "GET"):
-        return render_template( 'response.html', name = request.args['username'], url = request.args['sub1'] )
-    return render_template( 'response.html' )  #response to a form submission
+        try:
+            if (request.args['username'] == username and request.args['password'] == password):
+                return render_template( 'response.html', name = request.args['username'], url = request.args['sub1'] )
+        except:
+            return render_template( 'error.html' )
 
 @app.route("/error") # , methods=['GET', 'POST'])
 def prompt(): # Manipulation of form data. Prediction: Will work - does not reference external files. 
