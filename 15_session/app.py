@@ -55,11 +55,6 @@ def authenticate(): # Manipulation of form data. Prediction: Will work - does no
         except:
             return render_template( 'error.html' )
 
-@app.route("/error") # , methods=['GET', 'POST'])
-def prompt(): # Manipulation of form data. Prediction: Will work - does not reference external files. 
-    if (request.method == "GET"):
-        return render_template( 'response.html', name = request.args['username'], url = request.args['sub1'] )
-    return render_template( 'response.html' )  #response to a form submission
     
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
