@@ -3,7 +3,7 @@
   # Sports! - Sean Ging and Deven Maheshwari
   # SoftDev
   # K15 - Sessions Greetings/Cookies & Error Handling/App to hadnle bad inputs and tracking username
-  # Oct 18 2021 
+  # Oct 19 2021 
     
  -->
 
@@ -19,8 +19,9 @@
       Sports! - Sean Ging and Deven Maheshwari <br>
       SoftDev <br>
       K15 - Sessions Greetings/Cookies & Error Handling/App to hadnle bad inputs and tracking username <br>
-      Oct 18 2021 <br>
+      Oct 19 2021 <br>
       </h4>
+  {% if success %}
     <h1>
       Welcome to fight club, {{ name }} 
     </h1>
@@ -29,10 +30,29 @@
     </h3>
     
     Username: {{ name }} <br>
-    Request Method: GET  <br>
-    Query String: username={{ name }}&sub1={{ url }}
     
+    <a href="http://127.0.0.1:5000/logout">Logout</a>
     <br>
+  {% endif %}
+  
+  {% if not success %}
+  <h1>
+    Authentication Failed
+  </h1>
+    {% if name != 'Sports!' %}
+      Username does not exist. Please try again.  
+    {% endif %}
+
+    {% if name == 'Sports!' %}
+      Incorrect Password. Please try again. 
+    {% endif %}
+    <br>
+    <a href="http://127.0.0.1:5000/">Try Again</a>
+
+  {% endif %}
+
+     
+
   </body>
 
 </html>
