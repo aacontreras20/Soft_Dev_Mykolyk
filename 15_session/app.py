@@ -1,6 +1,6 @@
 # Sports! - Sean Ging and Deven Maheshwari
 # SoftDev
-# K15 - Sessions Greetings/Cookies & Error Handling/App to hadnle bad inputs and tracking username
+# K15 - Sessions Greetings/Cookies & Error Handling/App to handle bad inputs and tracking username
 # Oct 19 2021 
 
 from flask.globals import session           #facilitate form submission
