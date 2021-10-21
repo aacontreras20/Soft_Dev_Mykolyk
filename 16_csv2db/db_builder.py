@@ -1,7 +1,8 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
-#Dec 2020 -- The Time of the Rona
+# Sports! - Sean Ging and Deven Maheshwari
+# SoftDev
+# K16 - All About Databse/Skeleton stub/SQLITE3 BASICS
+# Oct 21 2021 
+
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O

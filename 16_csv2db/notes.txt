@@ -1,0 +1,4 @@
+- Uses ; at the end of each statement like java
+- .open ends the connection between sqlite terminal and db?? "no such table: <table_name>
+- Command: SELECT * FROM tpotusa;
+  Return:  basitar|2
