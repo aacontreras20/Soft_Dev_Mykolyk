@@ -16,7 +16,7 @@ Notable:
 * Command: SELECT * FROM tpotusa;
   --> Return:  basitar|2
 * ...> occurs in terminal when calling some sqlite functions. Does not allow user to get data from database. 
-  --> https://www.sqlite.org/cli.html. This symbol is a continuation prompt in the case of an error in the sqlite terminal when inputting a command. 
+  --> https://www.sqlite.org/cli.html. This symbol is a continuation prompt in the case of an error in the sqlite terminal when inputting a command.   
 
 Errors Encountered:
 --------------------------
