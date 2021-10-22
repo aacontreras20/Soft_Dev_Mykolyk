@@ -23,11 +23,8 @@ c.execute(command)    # run SQL statement
 with open('courses.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        code = row['code']
-        mark = row['mark']
-        id = row['id']
         command = 'INSERT INTO courses VALUES (?, ?, ?);'
-        params = (code, mark, id)
+        params = (row['code'], row['mark'], row['id'])
         c.execute(command, params)   
 
 # Table: students
@@ -37,12 +34,9 @@ c.execute(command)    # run SQL statement
 
 with open('students.csv') as csvfile:
     reader = csv.DictReader(csvfile)
-    for row in reader:
-        name = row['name']
-        age = row['age']
-        id = row['id']
+    for row in reader:        
         command = 'INSERT INTO students VALUES (?, ?, ?);'
-        params = (name, age, id)
+        params = (row['name'], row['age'], row['id'])
         c.execute(command, params)
 
 
