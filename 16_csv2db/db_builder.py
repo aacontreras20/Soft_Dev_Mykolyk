@@ -41,7 +41,7 @@ with open('students.csv') as csvfile:
         name = row['name']
         age = row['age']
         id = row['id']
-        command = 'INSERT INTO courses VALUES (?, ?, ?);'
+        command = 'INSERT INTO students VALUES (?, ?, ?);'
         params = (name, age, id)
         c.execute(command, params)
 
