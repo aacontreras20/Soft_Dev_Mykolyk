@@ -25,9 +25,8 @@ with open('courses.csv') as csvfile:
         code = row['code']
         mark = row['mark']
         id = row['id']
-        courses_dict[code] = [mark, id] 
         command = 'INSERT INTO courses VALUES (?, ?, ?);'
-        params = (keys, courses_dict[keys][0], courses_dict[keys][1])
+        params = (code, mark, id)
         c.execute(command, params)   
 
 
