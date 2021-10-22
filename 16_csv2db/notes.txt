@@ -3,6 +3,12 @@
 # K16 - All About Databse/Skeleton stub/SQLITE3 BASICS
 # Oct 21 2021 
 
+
+CSV Module:
+---------------
+- Dictreader maps each row to a dictonary
+
+
 Notable:
 -------------
 * Uses ; at the end of each statement like java
@@ -10,7 +16,7 @@ Notable:
 * Command: SELECT * FROM tpotusa;
   --> Return:  basitar|2
 * ...> occurs in terminal when calling some sqlite functions. Does not allow user to get data from database. 
-
+  --> https://www.sqlite.org/cli.html. This symbol is a continuation prompt in the case of an error in the sqlite terminal when inputting a command. 
 
 Errors Encountered:
 --------------------------
@@ -29,4 +35,5 @@ Errors Encountered:
 
 
   Questions:
+  -------------
   What does "Connected to a transient in-memory database" mean?
