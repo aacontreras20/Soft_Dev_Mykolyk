@@ -32,7 +32,7 @@ with open('courses.csv') as csvfile:
 
 # Table: students
 
-command = "CREATE TABLE courses(name TEXT, age INTEGER, id INTEGER);"          # test SQL stmt in sqlite3 shell, save as string
+command = "CREATE TABLE students(name TEXT, age INTEGER, id INTEGER);"          # test SQL stmt in sqlite3 shell, save as string
 c.execute(command)    # run SQL statement
 
 with open('students.csv') as csvfile:
