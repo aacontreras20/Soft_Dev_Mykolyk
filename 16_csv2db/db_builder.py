@@ -41,9 +41,9 @@ try:
             c.execute(command, params)
     
     print("Done Making Database")
-    
+
 except:
-    pass
+    print("Database already exists")
 
 
 
