@@ -25,12 +25,10 @@ with open('courses.csv') as csvfile:
         code = row['code']
         mark = row['mark']
         id = row['id']
-        courses_dict[code] = [mark, id]
-
-for keys in courses_dict: 
-    command = 'INSERT INTO courses VALUES (?, ?, ?);'
-    params = (keys, courses_dict[keys][0], courses_dict[keys][1])
-    c.execute(command, params)   
+        courses_dict[code] = [mark, id] 
+        command = 'INSERT INTO courses VALUES (?, ?, ?);'
+        params = (keys, courses_dict[keys][0], courses_dict[keys][1])
+        c.execute(command, params)   
 
 
 
