@@ -1,0 +1,12 @@
+Deven Maheshwari & Batman and Aaron Contreras & Fred
+SoftDev
+K24 - LAMP
+2022-01-12
+
+Notes:
+_________________________
+
+* Never allow ROOT @ droplet
+* SSH Key or password configuration can be changed later
+	* Eventually only use SSH key authentication for security
+*
