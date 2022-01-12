@@ -8,5 +8,21 @@ _________________________
 
 * Never allow ROOT @ droplet
 * SSH Key or password configuration can be changed later
-	* Eventually only use SSH key authentication for security
-*
+* --> Eventually only use SSH key authentication for security
+* Making sure you have the student developer pack
+* --> Super confusing but you can go to GitHub then sign in and click your profile in the top right. 
+      Settings > Billing & Plans
+      Check for Github Pro (I think)
+* --> Another Check
+      Go to https://education.github.com/pack/ and sign in
+      Click sign up to get an account if not already made. 
+      Web dev includes digital ocean but Virtual Event also looks really cool
+* Steps to make sure digital ocean credits are there
+* --> Click learn more for Web Dev
+      Get access code for Digital Ocean 
+      Go to digital ocean, my account
+      Click the ellipses (...) > Manage billing 
+      Scroll down and enter the promo code. 
+      Congrats, you shouldn't be paying anymore!
+
+      
