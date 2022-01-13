@@ -1,4 +1,4 @@
-# how-to :: DO THE THING
+# how-to :: Provision a Droplet and Install LAMP
 ---
 ## Overview
 Why we care, what this will allow us to do, etc...
@@ -29,19 +29,14 @@ Why we care, what this will allow us to do, etc...
 
 
 ### Resources
-* thing1
-* thing2
+* [Digital Ocean](https://www.digitalocean.com/)
+* [Github Student Developer Pack](https://education.github.com/pack)
+* [Installing LAMP Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04)
 
 ---
 
 Accurate as of (last update): 2021-mm-dd
 
 #### Contributors:  
-Clyde "Thluffy" Sinclair  
-Joan of Arc, pd1  
-Buttercup, pd9  
-Blossom, pd9  
-Bubbles, pd9  
-Fake Grimlock, pd2  
+Deven Maheshwari, pd1  
 
-_Note: the two spaces after each name are important! ( <--burn after reading)  _
