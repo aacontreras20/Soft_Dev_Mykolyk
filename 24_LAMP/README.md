@@ -32,6 +32,10 @@ Why we care, what this will allow us to do, etc...
 * [Digital Ocean](https://www.digitalocean.com/)
 * [Github Student Developer Pack](https://education.github.com/pack)
 * [Installing LAMP Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04)
+* [Provisioning Droplet](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
+* [Sqlite Command Line Stuff](https://sqlite.org/cli.html)
+
+
 
 ---
 
