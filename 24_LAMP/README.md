@@ -1,11 +1,19 @@
 # how-to :: Provision a Droplet and Install LAMP
 ---
 ## Overview
-Why we care, what this will allow us to do, etc...
+Allows us to host websites and other apps on easily accessible virtual servers.
 
-### Estimated Time Cost: _
+### Estimated Time Cost: 1.5 hours
 
 ### Prerequisites:
+
+### Github Student Developer Pack:
+
+### Provisioning A Droplet:
+
+### Installing Linux, Apache, Sqlite, Python (LAMP):
+
+### Extra:
 
 - Something you should know beforehand...
 - Something you will need installed beforehand...
@@ -39,7 +47,7 @@ Why we care, what this will allow us to do, etc...
 
 ---
 
-Accurate as of (last update): 2021-mm-dd
+Accurate as of (last update): 2021-01-17
 
 #### Contributors:  
 Deven Maheshwari, pd1  
