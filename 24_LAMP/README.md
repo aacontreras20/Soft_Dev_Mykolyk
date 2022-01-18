@@ -26,28 +26,23 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 
 ### Installing Linux, Apache, Sqlite, Python (LAMP):
 - You must use sudo commands to install LAMP
+- Run each of the following commands. Wait until the installation is done for each command before moving on  
+	```
+	$ sudo apt install apache2
+	```
+	Since were using sqlite instead of mysqlite
+	```
+	$ sudo apt install sqlite 3
+	```
+	```
+	$ sudo apt install python3
+	```
+
 
 ### Extra:
 
-- Something you should know beforehand...
-- Something you will need installed beforehand...
-
-1. Step blah blah blah, and/or...
-1. Step, with `inline code`, and/or...
-1. Step, with
-    ```
-    generic code block or terminal command
-    ```
-   and/or...
-    ```javascript
-    var foo = "this that JS tho";
-    ```
-   and/or...
-    ```python
-    print("this that Python tho")
-    ```
-   and/or...
-1. Step, with [hyperlink](https://xkcd.com)s...
+- To remove root access, run
+```$ adducer username
 
 
 ### Resources
