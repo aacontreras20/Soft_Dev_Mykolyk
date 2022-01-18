@@ -41,8 +41,19 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 
 ### Extra:
 
-- To remove root access, run
-```$ adducer username
+- To remove root access but still have user account, run
+```$ adduser username``` and enter a password. Ignore other prompts if wanted. 
+- Run to give admin powers ```
+$ usermod -aG sudo username
+```
+- Run, to switch users ```
+$ su - username
+```
+
+- Disabling root login
+Run ```$ sudo nano /etc/ssh/sshd_config```
+set "PermitRootLogin" to "no"
+Run ```$ sudo service ssh restart```
 
 
 ### Resources
