@@ -43,12 +43,8 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 
 - To remove root access but still have user account, run
 ```$ adduser username``` and enter a password. Ignore other prompts if wanted. 
-- Run to give admin powers ```
-$ usermod -aG sudo username
-```
-- Run, to switch users ```
-$ su - username
-```
+- Run ```$ usermod -aG sudo username``` to give admin powers 
+- Run ```$ su - username``` to switch users
 
 - Disabling root login
 Run ```$ sudo nano /etc/ssh/sshd_config```
