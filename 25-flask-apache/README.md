@@ -44,8 +44,8 @@ application.secret_key = os.urandom(32)
 ```
 
 3. Creating venv
-- Create venv `sudo virtualenv venv`
-- Activate venv `source venv/bin/activate`
+- Create venv `sudo virtualenv venv` or `sudo python3 -m venv env`
+- Activate venv `source venv/bin/activate` 
 
 4. Configure and enable New Virtual Host
 - run `sudo nano /etc/apache2/sites-available/FlaskApp.conf`
