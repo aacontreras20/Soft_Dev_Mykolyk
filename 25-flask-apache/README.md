@@ -73,8 +73,8 @@ application.secret_key = os.urandom(32)
 
 - enable virtual host by running `sudo a2ensite FlaskApp`
 
-5. run app
-
+5. Run app
+- Make sure to run the correct __init__.py and all modules are installed and enabled. 
 
 ### Resources
 * [Digital Ocean](https://www.digitalocean.com/)
