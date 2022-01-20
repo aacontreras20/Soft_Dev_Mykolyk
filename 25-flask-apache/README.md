@@ -11,13 +11,13 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 
 ### Installing Flask:
 
-0. Install Flask `sudo apt-get install python3-pip`
+0. Install Flask `sudo apt-get install python3-pip`  
    Install virtualenv `sudo pip install virtualenv`
 
 1. Verify apache is working by visiting servers public ip address in browser `http://your_server_ip`
 
 2. Install and enable mod_wsgi to enable Apache to serve Flask applications
-- to Install run `sudo apt-get install libapache2-mod-wsgi python-dev`
+- to Install run `sudo apt-get install libapache2-mod-wsgi-py3`  
 - to enable run `sudo a2enmod wsgi`
 
 
@@ -25,7 +25,7 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 
 1. Deploy a simple flask app
 - Place app in /var/www directory using command `cd /var/www`
-- Clone git repo: `sudo git clone <repo url> flaskApp/` note: replace flaskApp with name of app
+- Clone git repo: `sudo git clone <repo url> flaskApp/` note: replace flaskApp with name of app. Use https url
 - make contents editable with `sudo chown -R $USER:$USER flaskApp/; chmod -R 777 flaskApp/`
 
 2. Create the .wsgi file
