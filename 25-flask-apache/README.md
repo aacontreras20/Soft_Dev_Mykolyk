@@ -12,7 +12,7 @@ Allows us to host websites and other apps on easily accessible virtual servers.
 ### Installing Flask:
 
 0. Install Flask `sudo apt-get install python3-pip`  
-   Install virtualenv `sudo pip install virtualenv`
+   Install virtualenv `sudo pip install virtualenv` or `sudo apt install python3.8-venv`
 
 1. Verify apache is working by visiting servers public ip address in browser `http://your_server_ip`
 
